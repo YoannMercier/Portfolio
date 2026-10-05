@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yoann Mercier — Développeur web</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>
+  (function(){
+    var saved = localStorage.getItem('theme');
+    if (saved === 'light' || saved === 'dark') {
+      document.documentElement.setAttribute('data-theme', saved);
+    }
+  })();
+</script>
+</head>
+<body>
+
+<div class="scroll-progress"></div>
+
+<header class="nav">
+  <div class="nav-inner">
+    <div class="nav-brand"><span class="dot"></span>yoann@mercier</div>
+    <nav class="nav-links">
+      <a href="#profil">Profil</a>
+      <a href="#parcours">Parcours</a>
+      <a href="#competences">Compétences</a>
+      <a href="#experience">Expérience</a>
+      <a href="#projets">Projets</a>
+      <a href="#contact">Contact</a>
+      <a href="https://www.linkedin.com/in/yoann-mercier2004" target="_blank" rel="noopener" class="nav-linkedin" aria-label="LinkedIn de Yoann Mercier">in</a>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Changer de thème">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path></svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="hero" style="border-top:none;">
+    <div class="status-badge"><span class="dot"></span>Disponible pour une alternance — rentrée 2026</div>
+    <h1>Yoann Mercier<br><span class="accent">développeur</span> en formation architecture logicielle</h1>
+    <p class="role"><span id="role-text"></span><span class="cursor"></span></p>
+    <p class="pitch">Formé aux réseaux et systèmes avant de me spécialiser en développement, je construis des applications web du serveur à l'interface — avec un vrai souci de comprendre ce qui tourne en dessous du code.</p>
+    <div class="hero-meta">
+      <span>Ferrière-en-Brie / Noisiel (77)</span>
+      <span>+33 (0)7 83 92 89 79</span>
+      <span>yoannmercier.pro@gmail.com</span>
+    </div>
+    <div class="cta-row">
+      <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+      <a href="#contact" class="btn btn-ghost">Me contacter</a>
+      <a href="https://www.linkedin.com/in/yoann-mercier2004" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn</a>
+    </div>
+  </section>
+
+  <section id="profil">
+    <div class="section-head"><span class="prompt">~/profil</span></div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>Titulaire d'un <strong>BTS SIO option SLAM</strong> et d'un Bac Pro Systèmes Numériques option RISC, j'ai construit mon parcours de bas en haut : d'abord le câblage, les serveurs et le réseau, puis le code et les bases de données. Aujourd'hui je poursuis en <strong>Bachelor Architecte en Logiciels Performants et Sécurisés</strong> pour aller plus loin sur l'architecture, la performance et la sécurité des systèmes que je conçois.</p>
+        <p>Je cherche une <strong>alternance</strong> où je peux mettre les mains dans du code utile, apprendre au contact d'une équipe, et continuer à comprendre les systèmes en profondeur plutôt qu'en surface.</p>
+      </div>
+      <div class="reveal">
+        <ul class="softskills">
+          <li>Autonome, organisé, j'avance même sur les sujets flous</li>
+          <li>Esprit logique et bonnes capacités de diagnostic</li>
+          <li>Calme et à l'écoute, notamment en accompagnement utilisateur</li>
+          <li>Persévérant : je vais au bout, en posant les bonnes questions quand je bloque</li>
+          <li>Curieux des nouvelles technologies</li>
+        </ul>
+        <div class="lang-box">
+          <div class="k">Anglais</div>
+          <div>Niveau C1 technique — lecture et rédaction aisées, oral en cours de perfectionnement.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="parcours">
+    <div class="section-head"><span class="prompt">~/parcours</span></div>
+    <div class="timeline">
+      <div class="tl-item current reveal">
+        <div class="tl-year">2025 — 2028</div>
+        <div class="tl-title">Bachelor Architecte en Logiciels Performants et Sécurisés</div>
+        <div class="tl-desc">École 89, Ferrière-en-Brie (77) — 3e année. Recherche d'une alternance pour la suite du cursus.</div>
+        <span class="tag">en cours</span>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-year">Jan. — Mars 2025</div>
+        <div class="tl-title">Bachelor Ingénierie du Web — ESGI, Paris 12e</div>
+        <div class="tl-desc">Formation débutée puis mise en pause faute d'alternance : bases solides en JavaScript et en organisation d'un site web, approfondies depuis en autodidacte.</div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-year">2022 — 2024</div>
+        <div class="tl-title">BTS SIO — option SLAM</div>
+        <div class="tl-desc">Lycée René Descartes. Développement d'applications, conception et gestion de bases de données SQL, programmation PHP et Python.</div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-year">2019 — 2022</div>
+        <div class="tl-title">Baccalauréat Professionnel Systèmes Numériques — option RISC</div>
+        <div class="tl-desc">Lycée Simone Veil. Installation de serveurs, câblage et paramétrage de matériel réseau et de postes informatiques.</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="competences">
+    <div class="section-head"><span class="prompt">~/competences</span></div>
+    <div class="skill-groups">
+      <div class="skill-group reveal">
+        <h3>Développement</h3>
+        <div class="chip-row">
+          <span class="chip">PHP</span><span class="chip">JavaScript</span>
+          <span class="chip">HTML5</span><span class="chip">CSS3</span>
+          <span class="chip">Python</span><span class="chip">Java</span>
+          <span class="chip">SQL</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <h3>Systèmes & réseaux</h3>
+        <div class="chip-row">
+          <span class="chip">Linux</span><span class="chip">Installation serveurs</span>
+          <span class="chip">Paramétrage réseau</span><span class="chip">VMware</span>
+          <span class="chip">VirtualBox</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <h3>Outils</h3>
+        <div class="chip-row">
+          <span class="chip">Git</span><span class="chip">Déploiement web</span>
+          <span class="chip">Config. OS</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="section-head"><span class="prompt">~/experience</span></div>
+    <div class="exp-list">
+      <div class="exp-card reveal">
+        <div class="exp-meta">
+          <div class="company">Sakana</div>
+          <div class="dates">Déc. 2023 — Fév. 2024</div>
+        </div>
+        <div>
+          <div class="exp-role">Développeur web (stage)</div>
+          <ul class="exp-bullets">
+            <li>Développement d'une interface web de gestion de stock : ajout, gestion et archivage d'objets avec données modifiables (PHP, JavaScript).</li>
+            <li>Conception et création de la base de données associée (SQL).</li>
+          </ul>
+        </div>
+      </div>
+      <div class="exp-card reveal">
+        <div class="exp-meta">
+          <div class="company">Atikelec</div>
+          <div class="dates">2020–2021 puis Déc. 2022 — Fév. 2023</div>
+        </div>
+        <div>
+          <div class="exp-role">Technicien informatique (2 stages, 4 mois au total)</div>
+          <ul class="exp-bullets">
+            <li>Diagnostic, réparation et entretien d'ordinateurs, smartphones et équipements électroniques.</li>
+            <li>Installation logicielle, configuration matérielle, accueil et conseil client.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="exp-card reveal">
+        <div class="exp-meta">
+          <div class="company">Factory Systèmes</div>
+          <div class="dates">Déc. 2021 — Fév. 2022</div>
+        </div>
+        <div>
+          <div class="exp-role">Technicien monteur (stage)</div>
+          <ul class="exp-bullets">
+            <li>Assemblage de serveurs rackables (2U/4U) et PC industriels selon instructions précises.</li>
+            <li>Installation et configuration de systèmes d'exploitation selon les besoins clients.</li>
+            <li>Tests de performance et diagnostic post-montage.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projets">
+    <div class="section-head"><span class="prompt">~/projets</span></div>
+    <div class="proj-grid">
+      <div class="proj-card reveal">
+        <div class="proj-top">
+          <div class="proj-name">MoonWalkStreet</div>
+          <div class="proj-status">mis à jour en continu</div>
+        </div>
+        <p class="proj-desc">Une application de promenade avec géolocalisation : elle suit en temps réel les rues déjà parcourues sur une carte interactive, un peu comme un jeu d'exploration urbaine.</p>
+        <ul class="proj-features">
+          <li>Suivi GPS et progression par ville, avec réinitialisation possible</li>
+          <li>Recherche de ville et personnalisation des couleurs (rues visitées / non visitées)</li>
+          <li>Appel d'API externes pour les données de rues et d'itinéraires en temps réel</li>
+        </ul>
+        <div class="proj-stack">
+          <span class="chip">JavaScript</span><span class="chip">API cartographiques</span><span class="chip">Géolocalisation</span>
+        </div>
+        <a href="https://pourmesscriptpy.alwaysdata.net/SiteGeoloc/" target="_blank" rel="noopener" class="proj-link">Voir le projet en ligne →</a>
+      </div>
+      <div class="proj-card reveal">
+        <div class="proj-top">
+          <div class="proj-name">ToDoList</div>
+          <div class="proj-status">disponible</div>
+        </div>
+        <p class="proj-desc">Un gestionnaire de tâches complet avec comptes utilisateurs, pensé comme un projet solide pour travailler l'authentification et le CRUD de bout en bout.</p>
+        <ul class="proj-features">
+          <li>Inscription et connexion utilisateur sécurisées</li>
+          <li>Ajout, édition, suppression de tâches avec date de deadline</li>
+          <li>Recherche de tâches parmi la liste</li>
+        </ul>
+        <div class="proj-stack">
+          <span class="chip">PHP</span><span class="chip">SQL</span><span class="chip">JavaScript</span>
+        </div>
+        <a href="https://ymercier.alwaysdata.net/ToDoList/" target="_blank" rel="noopener" class="proj-link">Voir le projet en ligne →</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" style="border-bottom:none;">
+    <div class="contact-box reveal">
+      <h2>Parlons de votre besoin en alternance</h2>
+      <p>Je suis à la recherche d'une entreprise pour m'accueillir en alternance à partir de la rentrée 2026. Disponible pour échanger rapidement.</p>
+      <div class="contact-links">
+        <a href="mailto:yoannmercier.pro@gmail.com" class="btn btn-primary">Envoyer un email</a>
+        <button id="copy-email" data-email="yoannmercier.pro@gmail.com" class="btn btn-ghost btn-copy">
+          Copier l'email
+          <span class="copied-msg">Copié !</span>
+        </button>
+        <a href="tel:+33783928979" class="btn btn-ghost">+33 (0)7 83 92 89 79</a>
+        <a href="https://www.linkedin.com/in/yoann-mercier2004" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Yoann Mercier — Noisiel (77186), France</p>
+  <p class="uptime">uptime session : <span id="uptime">00:00</span></p>
+</footer>
+
+<button class="to-top" aria-label="Retour en haut">↑</button>
+
+<div id="theme-transition" aria-hidden="true">
+  <canvas id="theme-transition-canvas"></canvas>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
